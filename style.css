@@ -1,0 +1,243 @@
+/* reset css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+/* style css */
+
+@font-face {
+  font-family: "Flexo Demi";
+  src: 
+    url("./font/Flexo-Demi.woff2") format("woff2"),
+    url("./font/Flexo-Demi.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Flexo Bold";
+  src:
+    url("./font/Flexo-Bold.woff2") format("woff2"),
+    url("./font/Flexo-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Flexo Regular";
+  src:
+    url("./font/Flexo-Regular.woff2") format("woff2"),
+    url("./font/Flexo-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Flexo Medium";
+  src:
+    url("./font/Flexo-Medium.woff2") format("woff2"),
+    url("./font/Flexo-Medium.woff") format("woff");
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Flexo Demi", arial, sans-serif;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.pokedex {
+  margin: 20px;
+}
+
+.lista-de-pokemon {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon {
+  width: 205px;
+  height: 286px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.pokemon:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.pokemon img {
+  background-color: #e2dedece;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 5px 5px;
+  object-fit: contain;
+}
+
+.informacoes-pokemon {
+  padding: 1px;
+}
+
+.informacoes-pokemon p {
+  font-size: 11px;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+  font-family: "Flexo Medium", arial, sans-serif;
+
+}
+
+.informacoes-pokemon .numero-pokemon {
+  padding-bottom: 10px;
+}
+
+.informacoes-pokemon h4 {
+  font-size: 18.4px;
+  margin: 0;
+  font-family: "Flexo Demi", arial, sans-serif;
+  color: #313131;
+
+}
+
+.informacoes-pokemon h5 {
+  font-size: 12.8px;
+  margin: 0;
+  color: #919191;
+  font-family: "Flexo Bold";
+}
+
+.tipo-grass {
+  color: #212121;
+  background-color: #9BCC50;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-poison {
+  color: #FFFFFF;
+  background-color: #B97FC9;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-fire {
+  color: #FFFFFF;
+  background-color: #FD7D24;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-water {
+  color: #FFFFFF;
+  background-color: #4592C4;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-flying {
+  color: #212121;
+  background: linear-gradient(to bottom, #3DC7EF 50%, #BDB9B8 50%);
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-electric {
+  color: #212121;
+  background-color: #EED535;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-ice {
+  color: #212121;
+  background-color: #51C4E7;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-normal {
+  color: #212121;
+  background-color: #A4ACAF;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-rock {
+  color: #FFFFFF;
+  background-color: #A38C21;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-dragon {
+  color: #FFFFFF;
+  background: linear-gradient(to bottom, #53A4CF 50%, #F16E57 50%);
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-psychic {
+  color: #FFFFFF;
+  background-color: #F366B9;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-ground {
+  color: #212121;
+  background: linear-gradient(to bottom, #F7DE3F 50%, #AB9842 50%);
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-bug {
+  color: #FFFFFF;
+  background-color: #729F3F;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-fighting {
+  color: #FFFFFF;
+  background-color: #D56723;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-ghost {
+  color: #FFFFFF;
+  background-color: #7B62A3;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-steel {
+  color: #212121;
+  background-color: #9EB7B8;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
+
+.tipo-fairy {
+  color: #212121;
+  background-color: #FDB9E9;
+  padding: 2px 20px 2px 20px;
+  border-radius: 3px;
+}
